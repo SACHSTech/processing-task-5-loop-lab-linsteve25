@@ -128,8 +128,34 @@ public class Sketch extends PApplet {
     }
   }
 
+  // draw the fourth section with alternating black and white squares on rows and columns
   public void draw_section4(){
+    int intX = 0;
+    int intY = 0;
 
+    for(int intRow = 0; intRow < 30; intRow++){
+      for(int intColumn = 0; intColumn < 30; intColumn++){
+        intX = 3 + 900 + 10 * intRow; 
+        intY = 300 + 3 + 10 * intColumn; 
+
+        if (intColumn % 2 == 0) {
+          fill(0);
+
+        }
+        else if (intRow % 2 == 1) {
+          fill(0);
+
+        }
+        else {
+          fill(255);
+
+        }
+  
+        noStroke();
+        rect(intX, intY, 5, 5);
+
+      }
+    }
   }
 
   public void draw_section5(){
