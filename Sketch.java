@@ -212,8 +212,21 @@ public class Sketch extends PApplet {
     }
   }
   
+  // draw section 8 with a flippsed triangle from section 5
   public void draw_section8(){
+    int intX = 0;
+    int intY = 0;
 
+    for(int intColumn = 30; intColumn > -1; intColumn--){
+      for(int intRow = intColumn; intRow < 30; intRow++){
+        intX = 3 + 900 + 10 * intRow;  
+        intY = 3 + 10 * intColumn; 
 
+        fill(255);
+        noStroke();
+        rect(intX, intY, 5, 5);
+
+      }
+    }
   }
 }
