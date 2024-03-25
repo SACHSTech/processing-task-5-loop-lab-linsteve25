@@ -77,32 +77,12 @@ public class Sketch extends PApplet {
     }
   }
 
-  // draw the second section with alternating black and white columns
+  
   public void draw_section2(){
-    int intX = 0;
-    int intY = 0;
 
-    for(int intRow = 0; intRow < 30; intRow++){
-      for(int intColumn = 0; intColumn < 30; intColumn++){
-        intX = 300 + 3 + 10 * intRow; 
-        intY = 300 + 3 + 10 * intColumn; 
-
-        if (intRow % 2 == 0) {
-          fill(0);
-
-        }
-
-        else {
-          fill(255);
-          
-        }
-          noStroke();
-          rect(intX, intY, 5, 5);
-    
-        }
-      }
   }
 
+  
   public void draw_section3(){
 
   }
