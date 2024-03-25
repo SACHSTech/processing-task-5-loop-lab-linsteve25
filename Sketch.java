@@ -158,8 +158,22 @@ public class Sketch extends PApplet {
     }
   }
 
+  // draw section 5 with staircase structure going up
   public void draw_section5(){
+    int intX = 0;
+    int intY = 0;
 
+    for(int intRow = 0; intRow < 30; intRow++){
+      for(int intColumn = 30 - intRow; intColumn < 30; intColumn++){
+        intX = 3 + 10 * intRow;  
+        intY = 3 + 10 * intColumn; 
+
+        fill(255);
+        noStroke();
+        rect(intX, intY, 5, 5);
+
+      }
+    }
   }
 
   public void draw_section6(){
