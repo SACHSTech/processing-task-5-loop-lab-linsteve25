@@ -59,7 +59,7 @@ public class Sketch extends PApplet {
    * draws the bottom left section
    */
 
-   // draw the first section with all white squares 
+  // draw the first section with all white squares 
   public void draw_section1(){
     int intX = 0;
     int intY = 0;
@@ -78,7 +78,6 @@ public class Sketch extends PApplet {
   }
 
   public void draw_section2(){
-
 
   }
 
