@@ -212,7 +212,7 @@ public class Sketch extends PApplet {
     }
   }
   
-  // draw section 8 with a flippsed triangle from section 5
+  // draw eighth section with a flipped triangle from section 5
   public void draw_section8(){
     int intX = 0;
     int intY = 0;
