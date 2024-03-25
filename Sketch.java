@@ -194,8 +194,22 @@ public class Sketch extends PApplet {
     }
   }
 
+  // draw seventh section with a flipped triangle from section 6
   public void draw_section7(){
+    int intX = 0;
+    int intY = 0;
 
+    for(int intColumn = 1; intColumn < 31; intColumn++){
+      for(int intRow = -intColumn + 30; intRow > -1; intRow--){
+        intX = 3 + 600 + 10 * intRow;  
+        intY = 3 + 10 * intColumn - 10; 
+
+        fill(255);
+        noStroke();
+        rect(intX, intY, 5, 5);
+
+      }
+    }
   }
   
   public void draw_section8(){
